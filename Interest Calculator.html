@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interest Calculator</title>
 </head>
+    
 <style>
     #box {
         margin-left: 550px;
@@ -37,18 +38,23 @@
     <div>
         <h2>Interest Calculator</h2>
     </div>
+    
     <div>
         <input type="number" id="P" placeholder="Principal" required><br><br>
         <input type="number" id="R" placeholder="Rate" required><br><br>
         <input type="number" id="T" placeholder="Time" required>
     </div><br>
+    
     <div>
         <Button class="button" onclick="interest()">Interest</Button>
         <Button class="button" onclick="amount()">Total Amount</Button>
         <Button class="button" onclick="reset()">Reset</Button>
     </div><br>
+    
     <div><input type="text" id="result" class="solve" disabled></div>
+    
 </body>
+    
 <script>
     function interest() {
         var p = document.getElementById("P").value;
